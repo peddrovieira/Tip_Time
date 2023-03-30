@@ -7,6 +7,10 @@ android {
     namespace 'com.ds2.tiptime'
     compileSdk 33
 
+        buildFeatures{
+            viewBinding = true
+        }
+
     defaultConfig {
         applicationId "com.ds2.tiptime"
         minSdk 28

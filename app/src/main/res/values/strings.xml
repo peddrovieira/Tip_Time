@@ -7,5 +7,6 @@
     <string name="ok_15">OK (15%)</string>
     <string name="arredondar_a_gorjeta">Arredondar a gorjeta?</string>
     <string name="calcular">Calcular</string>
-    <string name="quantidade_da_gorjeta">Quantidade da Gorjeta</string>
+    <string name="quantidade_da_gorjeta">Quantidade da Gorjeta: %s</string>
+    <string name="bom_18">Bom (18%)</string>
 </resources>

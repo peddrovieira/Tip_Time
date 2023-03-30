@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <EditText
@@ -11,27 +12,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Valor a ser Pago"
+        android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:text="@string/valor_a_ser_pago"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="@string/como_era_o_servi_o"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/priceInput" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/tipOptions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,19 +41,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textQuestion">
 
         <RadioButton
-            android:id="@+id/radiobutton1"
+            android:id="@+id/tip_20_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/incr_vel_20" />
 
         <RadioButton
-            android:id="@+id/radiobutton2"
+            android:id="@+id/tip_18_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bom_15" />
+            android:text="@string/bom_18" />
 
         <RadioButton
-            android:id="@+id/radiobutton3"
+            android:id="@+id/tip_15_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ok_15" />
@@ -71,26 +72,28 @@
         android:text="Arredondar a gorjeta?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/tipOptions" />
 
     <Button
         android:id="@+id/calcular_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/calcular"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simenao" />
 
     <TextView
-        android:id="@+id/gorjeta"
+        android:id="@+id/gorjeta_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/quantidade_da_gorjeta"
+        tools:text="Quantidade de Gorjeta: R$5 "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calcular_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
