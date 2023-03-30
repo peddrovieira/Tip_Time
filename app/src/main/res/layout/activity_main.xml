@@ -15,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Valor a ser Pago"
+        android:hint="@string/valor_a_pagar"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,10 +69,11 @@
         android:layout_marginEnd="16dp"
         android:checked="true"
         android:minHeight="48dp"
-        android:text="Arredondar a gorjeta?"
+        android:text="@string/arredondar_gorjeta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipOptions" />
+        app:layout_constraintTop_toBottomOf="@+id/tipOptions"
+        tools:ignore="UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/calcular_button"
@@ -85,7 +86,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simenao" />
+        app:layout_constraintTop_toBottomOf="@+id/simenao"
+        tools:ignore="VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/gorjeta_resultado"

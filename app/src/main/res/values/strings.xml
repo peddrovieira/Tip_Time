@@ -9,4 +9,6 @@
     <string name="calcular">Calcular</string>
     <string name="quantidade_da_gorjeta">Quantidade da Gorjeta: %s</string>
     <string name="bom_18">Bom (18%)</string>
+    <string name="valor_a_pagar">Valor a ser Pago</string>
+    <string name="arredondar_gorjeta">Arredondar a gorjeta?</string>
 </resources>
