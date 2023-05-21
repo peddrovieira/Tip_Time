@@ -7,7 +7,7 @@ O aplicativo consiste em uma calculadora de gorjetas, com porcentagens para um a
 ## Imagens do aplicativo
 
 <div align="center">
-  <img src="./ImgReadme/Screenshot.png" alt="Imagem tela inicial"> 
+  <img src="./imgreadme/Screenshot.png" alt="Imagem tela inicial"> 
 </div>
 
 
